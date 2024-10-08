@@ -1,28 +1,33 @@
 # LoginIW
-# Spring Boot & React Login CRUD Application
+# Login con Spring Boot y React
 
-## Description
-This project is a simple login system built with Spring Boot and React, featuring:
-- User registration
-- User login
-- Protected CRUD functionality (available only after authentication)
+## Descripción
+Este proyecto implementa una aplicación de inicio de sesión utilizando Spring Boot en el backend y React en el frontend. El sistema permite a los usuarios registrarse y acceder a una sección privada (CRUD) después de iniciar sesión.
 
-## Features
-- User Authentication (username and password)
-- BCrypt password hashing
-- JWT-based session management (if applicable)
-- RESTful API for user operations
+## Tecnologías Utilizadas
+- Spring Boot
+- Spring Security
+- React
+- Axios
+- MySQL
 
-## Technologies Used
-- **Backend**: Spring Boot, Spring Security, JPA, MySQL
-- **Frontend**: React, Axios
-- **Database**: MySQL
-
-## Setup Instructions
+## Configuración del Proyecto
 
 ### Backend
-1. Clone the repository
-2. Set up MySQL database and update `application.properties`
-3. Run the backend service:
-   ```bash
-   ./mvnw spring-boot:run
+1. Clona el repositorio.
+2. Configura la base de datos MySQL y ajusta las credenciales en `application.properties`.
+3. Ejecuta el proyecto Spring Boot.
+
+### Frontend
+1. Navega a la carpeta del frontend.
+2. Ejecuta `npm install` para instalar las dependencias.
+3. Ejecuta `npm start` para iniciar la aplicación React.
+
+## Uso
+1. Regístrate un nuevo usuario.
+2. Inicia sesión con el nombre de usuario y la contraseña.
+3. Accede a la sección privada en `/home`.
+
+## Notas
+- Asegúrate de que el backend se esté ejecutando en `http://localhost:8085`.
+- Las rutas están protegidas y no se puede acceder a `/home` sin iniciar sesión.
